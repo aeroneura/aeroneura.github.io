@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="98" height="98">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="magenta" />
+      <stop offset="100%" stop-color="cyan" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="red" />
+      <stop offset="100%" stop-color="yellow" />
+    </linearGradient>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="lime" />
+      <stop offset="100%" stop-color="blue" />
+    </linearGradient>
+  </defs>
+
+  <!-- Group for rotation -->
+  <g id="wheel" transform-origin="center">
+    <!-- Outer Circles -->
+    <circle cx="12" cy="12" r="1.5" fill="url(#grad1)">
+      <animate attributeName="r" values="1.5;1.8;1.5" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="7" cy="7" r="1" fill="url(#grad2)">
+      <animate attributeName="r" values="1;1.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="17" cy="7" r="1" fill="url(#grad3)">
+      <animate attributeName="r" values="1;1.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="7" cy="17" r="1" fill="url(#grad1)">
+      <animate attributeName="r" values="1;1.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="17" cy="17" r="1" fill="url(#grad2)">
+      <animate attributeName="r" values="1;1.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="5" cy="12" r="1" fill="url(#grad3)">
+      <animate attributeName="r" values="1;1.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="19" cy="12" r="1" fill="url(#grad1)">
+      <animate attributeName="r" values="1;1.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="12" cy="5" r="1" fill="url(#grad2)">
+      <animate attributeName="r" values="1;1.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Lines -->
+    <g stroke-width="0.3">
+      <line x1="12" y1="12" x2="7" y2="7" stroke="url(#grad1)">
+        <animate attributeName="stroke" values="url(#grad1);#ff00ff;url(#grad1)" dur="2s" repeatCount="indefinite" />
+      </line>
+      <line x1="12" y1="12" x2="17" y2="7" stroke="url(#grad2)">
+        <animate attributeName="stroke" values="url(#grad2);#ff0000;url(#grad2)" dur="2s" repeatCount="indefinite" />
+      </line>
+      <line x1="12" y1="12" x2="7" y2="17" stroke="url(#grad3)">
+        <animate attributeName="stroke" values="url(#grad3);#00ff00;url(#grad3)" dur="2s" repeatCount="indefinite" />
+      </line>
+      <line x1="12" y1="12" x2="17" y2="17" stroke="url(#grad1)">
+        <animate attributeName="stroke" values="url(#grad1);#ff00ff;url(#grad1)" dur="2s" repeatCount="indefinite" />
+      </line>
+
+      <line x1="5" y1="12" x2="7" y2="7" stroke="url(#grad2)">
+        <animate attributeName="stroke" values="url(#grad2);#ff0000;url(#grad2)" dur="2s" repeatCount="indefinite" />
+      </line>
+      <line x1="5" y1="12" x2="7" y2="17" stroke="url(#grad3)">
+        <animate attributeName="stroke" values="url(#grad3);#00ff00;url(#grad3)" dur="2s" repeatCount="indefinite" />
+      </line>
+      <line x1="19" y1="12" x2="17" y2="7" stroke="url(#grad1)">
+        <animate attributeName="stroke" values="url(#grad1);#ff00ff;url(#grad1)" dur="2s" repeatCount="indefinite" />
+      </line>
+      <line x1="19" y1="12" x2="17" y2="17" stroke="url(#grad2)">
+        <animate attributeName="stroke" values="url(#grad2);#ff0000;url(#grad2)" dur="2s" repeatCount="indefinite" />
+      </line>
+
+      <line x1="7" y1="7" x2="12" y2="5" stroke="url(#grad3)">
+        <animate attributeName="stroke" values="url(#grad3);#00ff00;url(#grad3)" dur="2s" repeatCount="indefinite" />
+      </line>
+      <line x1="17" y1="7" x2="12" y2="5" stroke="url(#grad1)">
+        <animate attributeName="stroke" values="url(#grad1);#ff00ff;url(#grad1)" dur="2s" repeatCount="indefinite" />
+      </line>
+      <line x1="7" y1="17" x2="12" y2="15" stroke="url(#grad2)">
+        <animate attributeName="stroke" values="url(#grad2);#ff0000;url(#grad2)" dur="2s" repeatCount="indefinite" />
+      </line>
+      <line x1="17" y1="17" x2="12" y2="15" stroke="url(#grad3)">
+        <animate attributeName="stroke" values="url(#grad3);#00ff00;url(#grad3)" dur="2s" repeatCount="indefinite" />
+      </line>
+    </g>
+
+    <!-- Center Circle & Text -->
+    <circle cx="12" cy="12" r="2" fill="url(#grad1)">
+      <animate attributeName="r" values="2;2.2;2" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="12" y="12" font-family="Arial, sans-serif" font-size="1" text-anchor="middle" fill="white" font-weight="bold" dy="0.35">
+      Aero Neura
+    </text>
+  </g>
+
+  <!-- Rotation animation -->
+  <style>
+    #wheel {
+      animation: rotate 5s linear infinite;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</svg>

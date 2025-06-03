@@ -1,0 +1,21 @@
+{
+    "name": "Aero Neura",
+    "short_name": "Aero Neura",
+    "description": "Aero Neura (formerly Aero Neura) is a dynamic social media platform for real-time communication...",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#317EFB",
+    "icons": [
+        {
+            "src": "icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

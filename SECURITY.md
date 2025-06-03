@@ -4,10 +4,13 @@
 
 The following versions of this project are currently supported with security updates:
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 1.0.x   | ✅ Supported        |
-| < 1.0   | ❌ Not Supported    |
+The following table summarizes the support status for each version:
+
+| Version       | Support Status      |
+| ------------- | ------------------- |
+| 1.0.1         | ✅ Updated          |
+| 1.0.0         | ✅ Supported        |
+| < 1.0.0       | ❌ Not Supported    |
 
 Only supported versions will continue to receive security updates. Users are strongly encouraged to upgrade to the latest supported release to stay protected.
 
